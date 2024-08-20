@@ -1,0 +1,241 @@
+@media only screen and (max-width: 767px) {
+  .link_each {
+    width: 98% !important;
+  }
+  .button-wrapper{
+    width:98% !important;
+  }
+  .share-container{
+    margin-top:2rem;
+  }
+
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 16px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position:relative;
+  /* z-index:200; */
+  overflow: hidden;
+}
+.button-wrapper{
+    display: flex;
+    width:47rem;
+    margin:auto;
+    padding-top:0.75rem;
+}
+.share-button {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: linear-gradient(
+      263.81deg,
+      rgba(255, 255, 255, 0.4) 18.8%,
+      rgba(255, 255, 255, 0) 73.34%
+    ),
+    rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.03),
+    inset -1px -0.5px 2px rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+}
+#profile_picture {
+  border-radius: 50%;
+  display: block;
+  height: 96px;
+  width: 96px;
+  margin: auto;
+  object-fit: cover;
+  max-width: 100%;
+}
+.name_container {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+#name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0;
+  padding-right: 0.5rem;
+}
+#verified {
+  width: 1rem;
+}
+.social_container {
+  display: flex;
+  justify-content: center;
+  height: 6rem;
+  
+}
+.fa-brands {
+  font-size: 2.2rem;
+  padding: 2rem 1rem;
+  color: #000000;
+}
+.link_each {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: linear-gradient(
+      263.81deg,
+      rgba(255, 255, 255, 0.4) 18.8%,
+      rgba(255, 255, 255, 0) 73.34%
+    ),
+    rgba(255, 255, 255, 0.25);
+  border-radius: 30px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.03),
+    inset -1px -0.5px 2px rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  width: 47rem;
+  text-align: center;
+  color: #320a0c;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1.125rem;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  height: 3.75rem;
+}
+.link_each:hover {
+  color: #320a0c;
+  scale: 1.02;
+}
+.link_container {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fa-brands:hover {
+  font-size: 2.35rem;
+}
+.share-button:hover {
+  scale: 1.05;
+}
+.background{
+    position:fixed;
+    width:100vw;
+    height:100%;
+    top:0;
+    left:0;
+    z-index: 1;
+    overflow: hidden;
+    object-position: center;
+    animation: rotateImg 300s linear alternate infinite;
+    object-fit: cover;
+}
+.full-content{
+    z-index:1000;
+}
+.qr_code_container{
+  border-radius:0.5rem;
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  max-width:10rem;
+  margin:auto;
+}
+.qr_code_container img{
+  width:100%;
+  object-fit: cover;
+
+}
+.modal-content{
+  background-color:#f2efef !important;
+}
+.share-container-wrapper{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  justify-content: space-between;
+}
+.share-container{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  padding:0.5rem;
+  text-decoration: none;
+  color:#000000
+}
+.share-new{
+  display:flex;
+  align-items:center;
+}
+.share-container-inner{
+  width:2rem;
+  height:2rem;
+  background-color: white;
+  border-radius:1rem;
+  display:flex;
+  justify-content: center;
+  margin-right:1rem
+}
+.share-container-inner img{
+  max-width:60%;
+  
+}
+.share-container p{
+  margin-bottom:0;
+  font-size:0.75rem;
+}
+.copy-link{
+  margin:2rem 0;
+  position:relative;
+  display:flex;
+
+}
+.copy-link input{
+  width: 100%;
+  padding:0.5rem;
+  border-radius:0.5rem;
+  border:1px solid rgb(98, 162, 247);
+
+}
+#copy_button{
+  width:5rem;
+  padding:0.3rem 0;
+  border-radius:0.5rem;
+  background:rgb(98, 162, 247);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left:0.5rem;
+  cursor:pointer;
+}
+.logo{
+  display:flex;
+  justify-content: center;
+  margin-bottom:2rem;
+}
+.logo img{
+  width:2rem;
+}
+
+
+
+
+
+
+
+@keyframes rotateImg{
+0% {
+    transform: rotate(0) scale(2.5);
+}
+
+100% {
+    transform: rotate(5000deg) scale(2.5);
+}
+}
